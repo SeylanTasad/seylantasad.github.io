@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+}
+html{
+    font-size: 16px;
+    font-family: 'Economica';
+}
+.main{
+    position: relative;
+    top: 5.3125rem; /* To offset for fixed header. */
+  }
+  /* Header */
+  
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: black;
+  }
+  
+  header .content {
+    display: flex;
+    align-items: center;
+    padding: 1.875rem;
+  }
+  
+  header h1 {
+    flex: 1;
+    font-family: 'Rubik Moonrocks';
+    color: white;
+  }
+  
+  header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav li {
+    display: flex;
+    padding-right: 20px;
+  }
+  
+  nav a {
+    line-height: 1.6;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    background-color: #f9004d;
+    border-radius: 40px;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 10px;
+  }
+  nav a:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    transform: 1.3;
+    transition: .4s;
+  }
+  header .mobile{
+    display: none;
+  }
+span{
+    color: #f9004d;
+}
+@media only screen and (max-width: 760px) {
+    header .desktop {
+      display: none;
+    }
+  nav a{
+    background-color: black;
+    border: none;
+  }
+  nav a:hover{
+    border: none;
+    cursor: pointer;
+  }
+    header .mobile {
+      display: block;
+      width: 100%;
+    }
+  
+    header .content {
+      padding: .5rem 0;
+      width: 100%;
+    }
+  
+    header .mobile ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    header .mobile li {
+      padding: 0;
+    }
+    header .mobile li a img{
+        width: 50px;
+        height: 50px;
+    }
+  }
+  .main{
+    position: relative;
+    top:2.5625rem;
+  }
+  .main .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42.5rem;
+    background-image: url(./Resources/Bird6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-x: center;
+    background-position-y: 10%;
+    padding-top: 70px;
+  }
+  .main .content .text{
+   display: inline-flex;
+   flex-direction: column;
+   text-align: center;
+   line-height: 25px;
+   margin-right: 5px;
+  }
+  .main .content .text .header{
+    font-weight: bold;
+    font-size: 4rem;
+    padding-bottom: 20px;
+  }
+  .main .content .text .middle{
+    font-size: 1.7rem;
+  }
+  .main .content .text .last{
+    font-size: 1.5rem;
+  }
+  .colh1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 6%;
+  }
+.image-container{
+display: flex;
+}
+.image-container .container{
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 30px;
+}
+.container .img img{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 95%;
+  height: 100%;
+}
+@media only screen and (max-width: 760px) {
+.colh1{
+  margin-top: 10%;
+}
+}
+.services{
+display:flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+margin: 5% auto;
+
+}
+.services .all .help{
+  vertical-align: middle;
+border-radius: 30px;
+background-color: black;
+border: 2px solid black;
+color: white;
+width: 205px;
+height: 250px;
+margin-left: 20px;
+line-height: 1.5;
+}
+.help .h4 {
+  width: 200px;
+  line-height: 1.5;
+}
+.help h1{
+  padding-bottom: 20px;
+}
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 80px;
+}
+footer h5{
+  padding-top: 5px;
+  font-size: 18px;
+}
+footer p{
+  text-align: left;
+  padding-left: 10px;
+  
+}
+
+
+
+
